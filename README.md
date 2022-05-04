@@ -2,4 +2,4 @@
 
 ## Turmas Info Sub II e IV
 
-1. Projeto com imagem, áudio e vídeo - (Clique aqui para acessar)[https://tallisson.github.io/Programa--oWebII/projeto01/]{:target="_blank"}
+1. Projeto com imagem, áudio e vídeo - <a href="https://tallisson.github.io/Programa--oWebII/projeto01/" target="_blank">Clique aqui!</a>
