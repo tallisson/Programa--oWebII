@@ -1,0 +1,83 @@
+<html lang="pt-br">
+  <head>
+    <title>Meu primeiro site</title>
+    <!-- Comentário -->
+    <!--
+      META: metadados do site = dados que vão descrever 
+      características do site.
+        * charset = conjunto de caracteres
+        * utf-8 = para o navegador entender letras e 
+        sinais de acetuação do pt-br
+    -->
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <!-- Texto: parágrafo (p) -->
+    <p>
+      Meu primeiro parágrafo
+    </p>
+
+    <!-- Texto: títulos (h1, h2, h3, h4, h5 e h6) -->
+    <h1>
+      Meu título h1
+    </h1>
+
+    <!-- Texto: span (texto simples e em linha) -->
+    <span>
+      Meu span 01
+    </span>
+
+    <span>
+      Meu span 02
+    </span>
+
+    <!-- 
+      Div: funciona como um organizador de
+      conteúdo (container)
+        * Caixa que vai ter várias outras tags
+        * dentro dela
+    -->
+    <div>
+      <h2>Minha primeira div</h2>
+
+      <p>Outro parágrafo</p>
+    </div>
+
+    <!--
+      img: serve para adicionar imagens
+        * src: source = fonte/caminho onde está o 
+          arquivo da imagem, para localizar a 
+          imagem no computador e exibí-la no site
+        * caminho: i) relativo = localizar uma 
+          pasta e o arquivo dentro do 
+          projeto do site; ii) completo: localizar o
+          arquivo baseado no caminho completo
+    -->
+    <img src="imagens/mar.jpg">
+
+    <audio src="audios/aeroporto.mp3" controls>
+      Seu navegador não consegue executar<code>áudios</code>
+    </audio>
+    <!--<div>
+      <video width="800" controls>
+        <source src="videos/jogo.mp4">
+        Seu navegador não tem suporte a<code>vídeos</code>
+      </video>
+    </div>-->
+
+    <script type="module">
+      import { Contact } from './script.js';
+
+      const contact = new Contact('Lara', '(99)98135-1734', 'Rua A, 12 - Trezidela');
+      console.log(contact);
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+

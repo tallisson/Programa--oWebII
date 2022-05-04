@@ -1,0 +1,53 @@
+<!--
+  DOCTYPE é uma anotação
+  que vai dizer pro navegador qual a versão
+  do HTML estamos usando pra criar o site
+  * Versão 5 = HTML 5
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Site com img, audio e vídeo</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <!--
+      Div é um elemento em bloco,
+      logo a próxima tag vai ficar embaixo dela
+    -->
+    <!--
+      Figure: demarca um espaço, em bloco, que 
+      vai ser ocupado por uma imagem (img)
+    -->
+    <figure>
+      <!--
+        Imagem com 600 px de largura
+      -->
+      <img 
+        src="imagens/mar.jpg" 
+        alt="Imagem do Mar"
+        width="500"
+      >
+      <figcaption>
+        Legenda
+      </figcaption>
+    </figure>
+
+    <div>
+      <!--
+        <audio src="audios/applause.wav" controls>
+        </audio>
+      -->
+      <audio controls>
+        <source src="audios/applause.wav">
+      </audio>
+    </div>
+
+    <div>
+      <video controls>
+        <source src="videos/video01.mp4">
+      </video>
+    </div>
+  </body>
+</html>
