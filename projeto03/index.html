@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta 
+      name="viewport"
+      content="width=device-width,initial-scale=1.0"
+    >
+    <title>Projeto 03</title>
+
+    <!-- 
+      Adicionar o CSS (Cascade StyleSheet) -
+      Folhas de Estilo em Cascata 
+      do bootstrap ao projeto
+    -->
+    <!--
+      A tag link carrega um arquivo externo
+      dentro do arq de html
+    -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link 
+      rel="icon" 
+      type="image/png" 
+      href="imgs/Contacts-icon.png"
+    >
+  </head>
+  <body>
+    <!-- 
+      HTML semântico: aplicar tags que tenham significados
+      para explicar da melhor forma possível um conteúdo 
+      que está sendo criado
+    -->
+    <!-- Cabeçalho de conteúdo -->
+    <header class="container-fluid mt-4">
+      <h1>Agenda de Contatos</h1>
+    </header>
+
+    <!-- Parte principal -->
+    <main class="container">
+      <div>
+        <!--
+          classe float-right (flutuar a direita)
+        -->
+        <div class="float-right">
+          <button
+            type="button"
+            class="btn btn-success"
+          >
+            Adicionar
+          </button>
+        </div>
+        <form class="form-inline">
+          <!-- 
+            id: nome (valor) que serve para identificar de 
+            forma única uma determinada tag.
+          -->
+          <div class="form-group">
+            <input 
+              type="search"
+              id="input-search"
+              class="form-control"
+            >
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary"
+          >
+            Pesquisar
+          </button>
+
+        </form>
+      </div>
+
+      <!-- Table = tabela -->
+      <!--
+        classe table
+        classe table-hover: destacar a linha da tabela qnd
+        o mouse está sobre ela
+        mt-4: margin-top de nível 4
+      -->
+      <table class="table table-hover mt-4">
+        <!-- thead = table head = cabeca da tabela  -->
+        <thead>
+          <!-- tr = table row = linha da tabela -->
+          <tr class="text-center">
+            <!-- th = table header = título da coluna da tabela -->
+            <th>Nome</th>
+            <th>Whatsapp</th>
+            <th>E-mail</th>
+            <th>Endereço</th>
+            <th>Opções</th>
+          </tr>
+        </thead>
+        <!-- tbody = table body = corpo da tabela (conteúdo) -->
+        <tbody class="text-center">
+          <tr>
+            <!-- td = table data = dados da tabela -->
+            <td class="align-middle">Mariazinha</td>
+            <td class="align-middle">(99)98123-4567</td>
+            <td class="align-middle">mariaazinha@gmail.com</td>
+            <td class="align-middle">Rua A, Altamira - 114; Barra do Corda/MA</td>
+            <td class="align-middle">
+              <button class="btn btn-primary">Alterar</button>
+              <button class="btn btn-danger">Deletar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>
